@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Zoom Plugin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vanilla-zoom/vanilla-zoom.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Vanilla JS Image Zoom Plugin</h1>
+
+        <div id="my-gallery" class="vanilla-zoom">
+            <div class="sidebar">
+                <img src="images/speaker-closeup.jpg" class="small-preview">
+                <img src="images/speaker-touch.jpg" class="small-preview">
+                <img src="images/speaker-lemons.jpg" class="small-preview">
+            </div>
+            <div class="zoomed-image"></div>
+        </div>
+    </div>
+
+
+    <script src="vanilla-zoom/vanilla-zoom.js"></script>
+    <script>
+        vanillaZoom.init('#my-gallery');
+        vanillaZoom.init('#my-gallery2');
+    </script>
+</body>
+</html>

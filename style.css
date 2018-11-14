@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px 0;
+    background: #efefef;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    color: #333;
+    padding: 100px 50px;
+    background: #fff;
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+#my-gallery {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container {
+        padding: 50px 30px;
+    }
+}
