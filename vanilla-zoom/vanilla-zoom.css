@@ -1,18 +1,25 @@
 .vanilla-zoom {
     width: 100%;
-    display: flex;
+	height: auto;
+    display: -ms-flexbox;
+	display: flex;
 }
 
 .vanilla-zoom .sidebar {
-    flex-basis: 30%;
-    display: flex;
+    display: -ms-flexbox;
+	display: flex;
+	-ms-flex-basis: 30%;
+	flex-basis: 30%;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .vanilla-zoom .sidebar img.small-preview {
     width: 100%;
+	max-height: auto;
     margin-bottom: 5px;
     cursor: pointer;
+	flex-shrink: 0;
 }
 
 .vanilla-zoom .sidebar img.small-preview:last-child {
@@ -20,6 +27,7 @@
 }
 
 .vanilla-zoom .zoomed-image {
+    -ms-flex: 1;
     flex: 1;
     background-repeat: no-repeat;
     background-position: center;
@@ -29,15 +37,14 @@
 
 @media (max-width: 768px) {
     .vanilla-zoom .sidebar {
+        -ms-flex: 1;
         flex: 1;
     }
-
     .vanilla-zoom .sidebar img.small-preview {
         cursor: pointer;
         margin-bottom: 12px;
     }
-
     .vanilla-zoom .zoomed-image {
         display: none;
     }
-} 
+}
